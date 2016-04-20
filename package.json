@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "body-parser": "^1.15.0",
+    "consolidate": "*",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.7.0",
+    "mongoose": "^4.4.11",
+    "morgan": "^1.7.0",
+    "path": "*",
+    "socket.io": "^1.4.5",
+    "swig": "*"
+  }
+}

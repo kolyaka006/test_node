@@ -1,0 +1,33 @@
+
+
+<div class="absolute-center form-event" ng-controller="editEventController">
+    <div class="text-center event-add-text">{{buttonEvent}} </div>
+    <form name="event" ng-submit="editEvent(event)" class="col-md-offset-4 col-md-4">
+        <input ng-model="event.name" class="col-md-12 margin-input"  placeholder="Input name" required>
+        <input ng-model="event.time" class="input-date col-md-12 margin-input" placeholder="Click for choice date" required>
+        <input ng-model="event.description" class="col-md-12 margin-input" placeholder="Input description" required>
+
+        <div class="col-md-12 nopadding">
+            <div class="col-md-2  nopadding">Public:</div>
+            <input type="checkbox" ng-model="event.isPublic" class="col-md-1 margin-input" required>
+        </div>
+
+        <div class="col-md-12 choice-shared">
+            <ui-select multiple ng-model="multipleDemo.selectedPeople" theme="bootstrap" close-on-select="false" title="Choose a person">
+                <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                <ui-select-choices group-by="someGroupFn" repeat="person in people ">
+                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                    <small>
+                        email: {{person.email}}
+                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                    </small>
+                </ui-select-choices>
+            </ui-select>
+        </div>
+
+        <div class="col-md-offset-2 col-md-8">
+            <button type="submit" class="btn btn-success col-md-5">{{buttonEvent}}</button>
+            <button type="button" ng-click="goToEvents()" class="btn btn-danger col-md-offset-1 col-md-5">Cancel</button>
+        </div>
+    </form>
+</div>

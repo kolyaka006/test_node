@@ -1,0 +1,134 @@
+.margin-input{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.absolute-center {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.error {
+    box-shadow: rgba(237, 12, 30, 0.90);
+}
+
+.form-login {
+    height: 150px;
+}
+
+.form-registration,.form-event {
+    height: 400px;
+}
+
+
+
+.events-header {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.add-events {
+    position: absolute;
+    width: 100%;
+    background-color: #03BF03;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.events-header:hover .add-events {
+    height: 50px;
+}
+
+.add-events-text {
+    font-size: 25pt;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    color: white;
+}
+
+.event-add-text {
+    font-size: 30pt;
+}
+
+
+.event {
+    position: relative;
+    background-color: #49DA54;
+    border-radius: 10px;
+    border: 3px outset #0B9016;
+    margin: 0px 15px 20px;
+}
+
+.block-control {
+    position: absolute;
+    right: 10px;
+    color: rgb(23, 15, 2);
+    z-index: 99;
+}
+
+.text-top {
+    font-weight: 600;
+    color: white;
+    font-size: 16pt;
+}
+
+.text-bottom {
+    color: black;
+    font-size: 14pt;
+}
+
+.delete-event {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 0px;
+    font-weight: 600;
+    font-size: 17pt;
+}
+
+.background-delete {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 18, 0, 0.42);
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.button-block {
+    margin-top: 30px;
+}
+
+.background-delete {
+    display: none;
+}
+
+.choice-shared {
+    padding: 0;
+    margin: 20px 0px;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.choice-shared .close {
+    line-height: 0.9 !important;
+}

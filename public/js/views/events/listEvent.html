@@ -1,0 +1,22 @@
+
+<div class="col-md-offset-2 col-md-8" ng-controller="eventController">
+    <div class="events-header">
+        <div class="add-events" ng-click="addEvent('Add event')">
+            <span class="glyphicon glyphicon-plus add-events-text">Add event</span>
+        </div>
+    </div>
+    <div  class="col-md-12" >
+        <div id="{{event.user}}" class="col-md-3 event" ng-repeat="event in events | orderBy :'event.time'">
+            <div class="block-control">
+                <span ng-click="editEvent(event.user)" class="glyphicon glyphicon-pencil"></span>
+                <span class="glyphicon glyphicon-remove"></span>
+            </div>
+            <div class="col-md-12 text-center text-top">Name event</div>
+            <div class="col-md-12 text-center text-bottom">{{event.name}}</div>
+            <div class="col-md-12 text-center text-top">Time event</div>
+            <div class="col-md-12 text-center text-bottom">{{event.time}}</div>
+            <div class="col-md-12 text-center text-top">Description</div>
+            <div class="col-md-12 text-center text-bottom">{{event.description}}</div>
+        </div>
+    </div>
+</div>

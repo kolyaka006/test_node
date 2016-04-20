@@ -1,0 +1,10 @@
+<div class="col-md-8 col-md-offset-4 form-login absolute-center">
+    <form name="form" ng-submit="login(loginUser)">
+        <input class="col-md-offset-4 col-md-5 margin-input" type="text" ng-model="loginUser.username" placeholder="input username" required>
+        <input class="col-md-offset-4 col-md-5 margin-input" type="password" ng-model="loginUser.password" placeholder="input password" required>
+        <div class="col-md-offset-4 col-md-5">
+            <button class="btn btn-success col-md-offset-1 col-md-4" type="submit">Login</button>
+            <button ng-click="Registration()" class="btn btn-danger col-md-offset-2 col-md-4" type="button">Registration</button>
+        </div>
+    </form>
+</div>

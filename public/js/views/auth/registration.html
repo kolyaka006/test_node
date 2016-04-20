@@ -1,0 +1,12 @@
+<form name="formRegistration" class="col-md-8 col-md-offset-4 form-registration absolute-center" ng-controller="sendController" ng-submit="registration()">
+    <input class="col-md-offset-4 col-md-5 margin-input" type="text" ng-model="regUser.username" placeholder="input username" required>
+    <input class="col-md-offset-4 col-md-5 margin-input" type="text" ng-model="regUser.name" placeholder="input name" required>
+    <input class="col-md-offset-4 col-md-5 margin-input" type="text" ng-model="regUser.lastName" placeholder="input last name" required>
+    <input class="col-md-offset-4 col-md-5 margin-input" type="email" ng-model="regUser.email" placeholder="input email" required>
+    <input class="col-md-offset-4 col-md-5 margin-input" type="password" ng-model="regUser.password" placeholder="input password" required>
+    <input class="col-md-offset-4 col-md-5 margin-input" type="password" ng-model="confirmPassword" placeholder="confirm password" ng-required="regUser.password==confirmPassword">
+    <div class="col-md-offset-4 col-md-5">
+        <button  class="btn btn-success col-md-offset-1 col-md-4" type="submit">Registration</button>
+        <button ng-click="goToLogin()" class="btn btn-danger col-md-offset-2 col-md-4" type="button">Cancel</button>
+    </div>
+</form>

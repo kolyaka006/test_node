@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/select.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+<body ng-app="myApp">
+<div ng-controller="mainController" class="container-fluid">
+    <div class="row" ng-include="page"></div>
+    <div class="background-delete">
+        <div class="delete-event">
+            <div class="col-md-12">
+                <div class="col-md-12 text-center">Are you want delete this event?</div>
+                <div class="col-md-12 button-block">
+                    <button class="btn btn-success col-md-offset-1 col-md-4">Yes</button>
+                    <button class="btn btn-success col-md-offset-2 col-md-4">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/public/js/libs/jquery.min.js"></script>
+<script src="/public/js/libs/bootstrap.min.js"></script>
+<script src="/public/js/libs/angular.min.js"></script>
+<script src="/public/js/libs/select.min.js"></script>
+<script src="/public/js/libs/sanitize.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="/public/js/app.js"></script>
+<script src="/public/js/controller/main.js"></script>
+<script src="/public/js/controller/send.js"></script>
+<script src="/public/js/controller/events.js"></script>
+<script src="/public/js/controller/addEvents.js"></script>
+<script src="/public/js/controller/editEvents.js"></script>
+<script src="/public/js/service/userService.js"></script>
+</body>
+</html>
